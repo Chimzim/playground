@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+  <head>
+  <script src="./hangman.js"> </script> 
+  </head>
+  <body>
+   <h1><b><center>Hangman<center><b></h1>
+   <center><input type="button" id="gameControl" value="Start Game" onClick="drawTree()"><center>
+    <br><br>
+    <center><canvas id="grid" width="1000" height="500" style="border:1px solid #000000;"></canvas><center><br>
+	<form id="userGuess" action="">
+	<center><input type="text" id="guess" name="guess"><center>
+	<br>
+	<Button type="button" id="gButton" name="gButton" onClick="userGuess()">Guess Letter</Button>
+	<Button type="button" id="pButton" name="pButton" onClick="userGuessPhrase()">Guess Phrase</Button>
+	</form>
+  </body>
+</html>
